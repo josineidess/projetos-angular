@@ -1,0 +1,13 @@
+<div class="row justify-content-center">
+  <div class="col-6">
+    <form>
+      <button class="btn btn-warning" (click)="this.st.diminuir(10)">
+        <strong>-</strong>
+      </button>
+      <input type="text" readonly name="nota" #n [value]="nota">
+      <button class="btn btn-success" (click)="this.st.aumentar(10)">
+        <strong>+</strong>
+      </button>
+    </form>
+  </div>
+</div>
