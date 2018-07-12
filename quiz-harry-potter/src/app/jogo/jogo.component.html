@@ -1,0 +1,26 @@
+<div id="geral" [hidden]="this.pg.esconder">
+<div id="cab">
+<h2 id="pergunta" [textContent]="perguntas"></h2>
+</div>
+<br>
+<div id="balao">
+        <div id = "msg" [textContent]="msg"></div>
+    <img src="../../assets/imagens/balao.png"/>
+</div>
+<div id="voldemort">
+    <img src="../../assets/imagens/voldemort.png"/>
+</div>
+<div id="t">
+<button (click)="acertar()" id="a" [textContent]="respostas"></button>
+<br>
+<button (click)="errar()" [textContent]="b" id="b"></button>
+<br>
+<button (click)="errar()" [textContent]="c" id="c"></button>
+<br>
+<button (click)="errar()" [textContent]="d" id="d"></button>
+</div>
+<br>
+<br>
+<button id="voltar" (click)="voltar()"><<</button>
+<button (click)="proxima()" id="avancar">>></button>
+</div>

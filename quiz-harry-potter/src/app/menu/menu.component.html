@@ -1,0 +1,18 @@
+<div [hidden]="!this.pg.esconder" id="tudo">
+<div id="cab">
+<h2>Quiz do Harry Potter</h2>
+</div>
+<div id="menu" [hidden]="!mudar">
+<img id="harry" src="https://cdn.colab55.com/images/1515605371/studio/53279/art/101065/stickers/fosco/standard/1.png"/>
+<br>
+<button (click)="jogar()" id="jogar">JOGAR</button>
+<br>
+<button (click)="configurar()" id="config">CONFIGURAÇÕES</button>
+<br>
+<button id="creditos">CRÉDITOS</button>
+</div>
+<div [hidden]="mudar" id="confi">
+<audio src="../../assets/musicas/tema.mp3" autoplay controls loop></audio>
+<button (click)="configurar()"><<</button>
+</div>
+</div>
